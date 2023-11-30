@@ -1,8 +1,12 @@
-from .views import index, user
-from django.urls import path, include, re_path
+import django.contrib
+from django.urls import path, re_path
+from .views import *
 
 urlpatterns = [
-    path('', index, name='home'),
-    # path('user/<str:name>/<int:age>', user, name='user'),
-    re_path(r'^user/(?P<name>\D+)/(?P<age>\d+)', user, name='user'),
+    re_path('index/about/contacts', contacts, name='contacts'),
+    re_path('index/about', about, name='about'),
+    path('login', login, name='login'),
+    path('index', index, name='index'),
+    path('client/<int:id>/', client, name='client'),
+    # path('clients/', clients, name='clients')
 ]

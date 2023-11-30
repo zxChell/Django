@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+</head>
+<body>
+    <h1>{{ header }}</h1>
+    <p>{{ user.name }},{{ user.age }}</p>
+    <p> адрес: {{ address.0 }} кв {{ address.1 }} дом {{ address.2 }}</p>
+    <p>{{ langs.1 }}</p>
+
+    {% autoescape off %}
+        {{ text }}
+    {% endautoescape %}
+
+
+<!--    <img scr="https://cs13.pikabu.ru/post_img/2023/10/17/7/1697539056176771402.jpg">-->
+</body>
+</html>

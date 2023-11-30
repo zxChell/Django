@@ -1,15 +1,40 @@
+from django.shortcuts import render
 from django.http import HttpResponse
+# Create your views here.
+
+
+clients = [
+    {'id': 1, 'name': 'Tom', 'lang': 'Python'},
+    {'id': 2, 'name': 'Tom', 'lang': 'JavaScript'},
+    {'id': 3, 'name': 'Tom', 'lang': 'C#'},
+    {'id': 4, 'name': 'Tom', 'lang': 'C++'},
+]
+
+
+def login(request):
+    return HttpResponse(f'432423')
 
 
 def index(request):
-    host = request.META["HTTP_HOST"]
-    user_agent = request.META["HTTP_USER_AGENT"]
-    path = request.path
-        
-    text = f'host: {host}, browser: {user_agent}, path: {path}'
+    header = 'Данные пользователя'
+    langs = ['Python', 'C++', 'C#', 'JavaScript']
+    user = {'name': 'Andrey', 'age': 18}
+    address = ('sdgfdsgsd', 13, 228)
+    text = '<p>My text</p>'
+    data = {'header': header, 'langs': langs, 'user': user, 'address': address, 'text': text, 'id': id}
+    return render(request, 'index.html', context=data)
+    # return render(request, 'index.html', context={'person': Person('Tom')})
 
-    return HttpResponse(text, headers={'SecretCode': '1231247124'})
+
+def about(request):
+    return render(request, 'about.html', context={'clients': clients})
 
 
-def user(request, name, age):
-    return HttpResponse(f'User: {name}.  age: {age}')
+def contacts(request):
+    return render(request, 'contacts.html', context={'clients': clients})
+
+
+def client(request, id):
+    return render(request, 'client.html', context={'id': id})
+
+
