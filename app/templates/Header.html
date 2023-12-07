@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+        <div class='logo'>
+        <img src="{% static "images/Слой1.jpg" %}"/>
+            <div class='info'>
+                <img src="{% static "images/google.jpg" %}" class='photo'/>
+                <img src="{% static "images/instagram.jpg" %}" class='photo'/>
+                <img src="{% static "images/invision.jpg" %}" class='photo'/>
+            </div>
+            <div class='container'>
+                <div class='menu'><p>О нас</p></div>
+                <div class='menu2'><p>Услуги</p>
+                <p>Специалисты</p>
+                <p>Пациентам</p>
+                <p>Контакты</p></div>
+            </div>
+            <div class='addres'>
+                <img src="{% static "images/location_outline.jpg" %}"/>
+            </div>
+                <div class='menu3'>
+                    <p>Чебоксары,<br>Энтузиастов 1А</p>
+                </div>
+                <div class='calendar'>
+                <img src="{% static "images/calendar.jpg" %}"/>
+                </div>
+                <div class='time'>
+                <p class='p2'>с 09:00 - 20:00</p>
+                <div class='text'>    
+                <p>пн-сб</p>
+                </div>
+                <div class='phone'>
+                    <img src="{% static "images/phone.jpg" %}"/>
+                </div>
+                <div>
+                    <p class='p3'>+7900 333 10 40</p>
+                </div>
+            </div>
+            <div class='button'>
+                {% comment %} <form action='ph/'> {% endcomment %}
+                    <button class='zxc'><a href='http://127.0.0.1:8000/phone/'>Заказать звонок</a></button>
+                {% comment %} </form> {% endcomment %}
+            </div>
+            
+            
+        {% comment %} <script src="" async defer></script> {% endcomment %}
+    </body>
+</html>

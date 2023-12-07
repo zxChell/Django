@@ -1,0 +1,106 @@
+.logo{
+    padding: 31px 130px 0px 130px;
+    display: flex;
+}
+
+.info{
+    padding: 15px;
+    padding-left: 55px;
+    
+}
+
+.photo{
+    padding-right: 15px;
+}
+
+.calendar{
+    padding-top: 13px;
+    padding-left: 19pxs;
+}
+
+.container{
+    display: flex;
+    padding-left: 70px;
+}
+
+.menu{
+    color: #01678A;
+}
+
+.menu2{
+    color: #AAA;
+    display: flex;
+}
+
+.container_two{
+    display: flex;
+}
+
+.time{
+    font-size: 13px;
+    padding-right: 0px;
+    padding-left: 8.5px;
+    display: flex;
+    padding-top: 5px;
+}
+
+.text{
+    color: #909090;
+}
+
+.menu3{
+    padding-left: 10px;
+    color: #474747;
+    font-size: 13px;
+    padding-right: 0px;
+}
+
+.p2{
+    padding-right: 5px;
+}
+
+.p3{
+    color: #3C3C3C;
+}
+
+.calendar{
+    font-size: 13px;
+    /* display: flex; */
+}
+
+.phone{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-right: 5.5px;
+}
+
+p{
+    padding-right: 35px;
+    font-family: Roboto;
+}
+
+.addres{
+    padding-top: 13px;
+    padding-left: 94px;
+}
+
+.button{
+    font-family: Roboto;
+    padding-left: 0px;
+    padding-top: 5px;
+}
+
+
+
+.zxc{
+    color: #fff;
+    font-weight: 400;
+    background-color: #38BCEA;
+    border: none;
+    width: 185.678px;
+    height: 41.202px;
+    font-family: Roboto;
+    border-radius: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
